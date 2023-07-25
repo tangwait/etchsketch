@@ -1,0 +1,7 @@
+#boxes-container {
+    border: 1px solid black;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+}

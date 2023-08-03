@@ -1,7 +1,16 @@
 #boxes-container {
     border: 1px solid black;
-}
-.boxes {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+#boxes-container .boxes {
+width: calc(25% - 22px);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+border: 1px solid black;
 }

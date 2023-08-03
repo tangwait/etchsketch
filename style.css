@@ -4,13 +4,27 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 800px;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
 }
 #boxes-container .boxes {
 width: calc(25% - 22px);
+height: calc(25% - 22px);
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 10px;
 border: 1px solid black;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }

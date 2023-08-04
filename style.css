@@ -9,13 +9,10 @@
     margin: auto;
 }
 #boxes-container .boxes {
-width: calc(25% - 22px);
-height: calc(25% - 22px);
+width: calc(25%);
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 10px;
-border: 1px solid black;
 }
 
 #title {

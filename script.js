@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const maxBoxes = 400;
-    const gridSize = Math.ceil(Math.sqrt(maxBoxes));
-
     const boxes = (numRows, numCols) => {
         const container = document.querySelector('#boxes-container');
         container.style.setProperty('--numRows', numRows);
@@ -28,7 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const container = document.querySelector('#boxes-container');
         container.innerHTML = '';
         boxes(numRows, numCols);
+        console.log(numRows);
     });
 
-    boxes(gridSize, gridSize);
+    updateDesc = () => {
+        const gridInput = document.getElementById('myRange');
+        gridInput.addEventListener('input', function() {
+            const numBoxes = parseInt(gridInput.value);
+            const numRows = Math.ceil(Math.sqrt(numBoxes));
+            const matrixSize = numRows;
+            const gridDesc = document.getElementById('grid-desc');
+
+            gridDesc.textContent = matrixSize + 'x' + matrixSize;
+        });
+    };
+
+    boxes(4, 4);
+    updateDesc();
 });

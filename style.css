@@ -1,28 +1,19 @@
 #boxes-container {
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+    grid-gap: 0px;
     width: 50vw;
     height: 50vh;
     margin: auto;
-}
-#boxes-container .boxes {
-width: calc(25%);
-height: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#title {
+    box-sizing: border-box;
+  }
+  
+  #boxes-container .boxes {
     display: flex;
     justify-content: center;
-}
-
-.slidecontainer {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+    align-items: center;
+    box-sizing: border-box;
+  }
+  

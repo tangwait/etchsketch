@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             container.appendChild(div);
 
             div.addEventListener('mouseenter', function() {
-                div.style.backgroundColor = 'blue';
+                div.style.backgroundColor = '#D3C4FF';
             });
         }
     };

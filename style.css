@@ -1,5 +1,15 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #98D8D8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
 #boxes-container {
-    border: 1px solid black;
+    border: 3px solid black;
     display: grid;
     grid-template-columns: repeat(var(--numCols), 1fr);
     grid-template-rows: repeat(var(--numRows), 1fr);
@@ -8,12 +18,44 @@
     height: 50vh;
     margin: auto;
     box-sizing: border-box;
+    background-color: #FFE5B4;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 15px;
   }
   
-  #boxes-container .boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-  }
-  
+#boxes-container .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.slidecontainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #D3C4FF;
+  margin: 16px;
+  border-radius: 15px;
+  border: black;
+  border-style: solid;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  justify-content: center;
+  margin: 16px;
+  border-radius: 15px;
+  border: black;
+  border-style: solid;
+  background-color: #FFC6D9;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+#grid-desc {
+  padding: 10px;
+}
